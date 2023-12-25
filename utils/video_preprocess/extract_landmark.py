@@ -87,6 +87,7 @@ def get_landmark(images):
     #         lm.append(detector.get_landmarks_from_image(np.array(images))[0])
     # else:
     lms_np = []
+    print(f".................len(images): {len(images)}")
     for image in images:
         try:
             lm = detector.get_landmarks_from_image(np.array(image))[0]

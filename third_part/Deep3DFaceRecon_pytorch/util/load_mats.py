@@ -8,7 +8,7 @@ from array import array
 import os.path as osp
 
 # load expression basis
-def LoadExpBasis(bfm_folder='BFM'):
+def LoadExpBasis(bfm_folder='/content/StyleHEAT3D/checkpoints/BFM'):
     n_vertex = 53215
     Expbin = open(osp.join(bfm_folder, 'Exp_Pca.bin'), 'rb')
     exp_dim = array('i')
@@ -39,7 +39,7 @@ def transferBFM09(bfm_folder='BFM'):
     texEV = original_BFM['texEV']  # eigen value
     texMU = original_BFM['texMU']  # mean texture
 
-    expPC, expEV = LoadExpBasis()
+    expPC, expEV = LoadExpBasis(bfm_folder)
 
     # transfer BFM09 to our face model
 
