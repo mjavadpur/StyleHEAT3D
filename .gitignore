@@ -1,0 +1,10 @@
+# Mobile Tools for Java (J2ME)
+#.mtj.tmp/
+
+# Package Files #
+.idea
+*.mp4
+
+
+checkpoints/
+docs/demo/
